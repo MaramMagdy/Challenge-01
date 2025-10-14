@@ -1,0 +1,232 @@
+:root{
+  --Light-Red : hsl(0, 100%, 67%);
+  --Orangey-yellow :  hsl(39, 100%, 56%);
+  --Green-teal :  hsl(166, 100%, 37%);
+  --Cobalt-blue : hsl(234, 85%, 45%);
+  --Light-slate-blue-bgc :hsl(252, 96%, 65%);
+  --Light-royal-blue-bgc :hsl(241, 81%, 54%);
+  --Violet-blue-circle : hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  /* Font size (paragraphs): 18px */
+  /* Weights: 500, 700, 800 */
+
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Hanken Grotesk", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:  hsla(241, 100%, 89%, 0.46);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+ 
+}
+
+.blue-rectangle{
+  width: 280px;
+  height: 380px;
+  background-image: linear-gradient(to bottom ,var(--Light-slate-blue-bgc) ,var(--Light-royal-blue-bgc));
+  border-radius: 20px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+
+}
+.result{
+  color: var(--Light-lavender);
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 28px;
+  
+}
+
+.circle {
+  background-image: linear-gradient(to bottom,var(--Violet-blue-circle),var(--Persian-blue-circle));
+  clip-path: circle(49%);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;              
+}
+.big-size{
+  color: var(--White);
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: -5px;
+}
+.text{
+  color: var(--Light-lavender);
+  font-size: 13px;
+  text-align: center;
+  width: 65%;
+}
+.great{
+  font-size: 25px;
+  color: var(--White);
+  /* font-weight: 700; */
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.white-rectangle{
+  background-color: var(--White);
+  height: 380px;
+  width: 320px;
+  margin-left: -45px;
+  /* z-index: -1; */
+  padding-left: 70px;
+  border-radius: 16px;
+}
+.summary{
+  margin-top: 20px;
+  color: var(--Dark-gray-blue);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.reaction{
+  width: 90%;
+  background-color: hsla(0, 100%, 67%, 0.131);
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  position: relative;
+}
+.memory{
+  width: 90%;
+  background-color: hsl(39, 100%, 56% , 0.131);
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  position: relative;
+
+
+}
+.verbal{
+  width: 90%;
+  background-color: hsla(166, 100%, 37%, 0.131);
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  position: relative;
+
+
+}
+.visual{
+  width: 90%;
+  background-color: hsl(234, 85%, 45% , 0.131);
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  position: relative;
+
+}
+img{
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.red{
+  color: var(--Light-Red);
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.green{
+  color: var(--Green-teal);
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.yellow{
+  color: var(--Orangey-yellow);
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.blue{
+  color: var(--Cobalt-blue);
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.s01{
+  font-weight: 700;
+  margin-right:6px;
+  color: var(--Dark-gray-blue);
+  position: absolute;
+  right: 55px;
+}
+.s02{
+  font-weight: 700;
+  color: hsla(224, 30%, 27%, 0.534);
+  position: absolute;
+  right: 20px;
+}
+
+.continue{
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  width: 90%;
+  height: 45px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.continue:hover{
+  background-color: var(--Light-royal-blue-bgc);
+}
+
+
+
+@media(max-width:375px){
+  .container{
+    flex-direction: column;
+  }
+  .blue-rectangle{
+    width: 100%;
+    height: 50vh;
+    margin-top: -40px;
+    padding-top: 40px;
+  }
+  .white-rectangle{
+    width:390px;
+    height: 65vh;
+    margin-top: -20px;
+    padding-top: 60px;
+    border-radius: 0;
+  }
+  
+}
